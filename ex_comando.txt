@@ -1,0 +1,13 @@
+chokidar "**/*.{liquid,css,js,json}" ^
+  --throttle 800 ^
+  -c "shopify theme push --store devshopertest.myshopify.com --theme 153791561981 --allow-live --path . --ignore README.md --ignore \"locales/*.json\""
+
+chokidar "**/*.{liquid,css,js,json}" ^
+  --throttle 800 ^
+  -c "shopify theme push --store devshopertest.myshopify.com --theme 153791561981 --path . --ignore README.md --ignore \"locales/*.json\" & echo."
+
+chokidar "**/*.{liquid,css,js,json}" ^
+  --throttle 800 ^
+  -c "shopify theme push --store devshopertest.myshopify.com --theme 153791561981 --path . --ignore README.md --ignore \"locales/*.json\" 
+
+shopify theme push --store devshopertest.myshopify.com --theme 153791561981 --path
