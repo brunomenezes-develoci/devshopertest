@@ -54,6 +54,13 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "text_AGnz4h": {
+          "type": "text",
+          "settings": {
+            "text": "Material:{{ product.metafields.custom.material_de_fabricacao.value }}",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -64,7 +71,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "text_AGnz4h"
       ],
       "settings": {
         "enable_sticky_info": true,
