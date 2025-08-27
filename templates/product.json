@@ -125,10 +125,81 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "featured_product_YLnmWQ": {
+      "type": "featured-product",
+      "blocks": {
+        "text_KBPwbG": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_pd9gtN": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_kz3ihV": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_Fhz4Ri": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_ixbHkP": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_cEG66r": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_pXHcqU": {
+          "type": "share",
+          "settings": {
+            "share_label": "Compartir"
+          }
+        }
+      },
+      "block_order": [
+        "text_KBPwbG",
+        "title_pd9gtN",
+        "price_kz3ihV",
+        "variant_picker_Fhz4Ri",
+        "quantity_selector_ixbHkP",
+        "buy_buttons_cEG66r",
+        "share_pXHcqU"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "{{ product.metafields.custom.similar.value }}",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "featured_product_YLnmWQ"
   ]
 }
