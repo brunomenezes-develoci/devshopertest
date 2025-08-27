@@ -55,6 +55,15 @@
             "share_label": "Share"
           }
         },
+        "collapsible_tab_LqtrDe": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Fila desplegable",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.material_de_fabricacao.value }}</p>",
+            "page": ""
+          }
+        },
         "text_9W4fGK": {
           "type": "text",
           "settings": {
@@ -65,7 +74,7 @@
         "text_AGnz4h": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.material_de_fabricacao.value }}",
+            "text": "Teste{{ product.metafields.custom.material_de_fabricacao.value }}",
             "text_style": "body"
           }
         }
@@ -79,6 +88,7 @@
         "buy_buttons",
         "description",
         "share",
+        "collapsible_tab_LqtrDe",
         "text_9W4fGK",
         "text_AGnz4h"
       ],
