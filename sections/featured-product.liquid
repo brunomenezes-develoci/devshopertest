@@ -113,6 +113,10 @@
                       {{ 'onboarding.product_title' | t }}
                     {%- endunless -%}
                   </h2>
+                {%- when 'material' -%}
+                  <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+                      {{ product.material | escape }}
+                  </h2>
                 {%- when 'price' -%}
                   <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                     {%- render 'price',
