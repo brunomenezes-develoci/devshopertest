@@ -127,6 +127,50 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_HiFPP3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PbxfRU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Produto similar",
+            "heading_size": "h1"
+          }
+        },
+        "text_467KCP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Veja abaixo um produto  muito similar a este e que pode te interessar</p>"
+          }
+        },
+        "button_qJdctr": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Etiqueta de botón",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PbxfRU",
+        "text_467KCP",
+        "button_qJdctr"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_product_YLnmWQ": {
       "type": "featured-product",
       "blocks": {
@@ -230,6 +274,7 @@
   "order": [
     "main",
     "related-products",
+    "rich_text_HiFPP3",
     "featured_product_YLnmWQ",
     "featured_collection_TXgNFd"
   ]
