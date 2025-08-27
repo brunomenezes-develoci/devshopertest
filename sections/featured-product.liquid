@@ -113,10 +113,6 @@
                       {{ 'onboarding.product_title' | t }}
                     {%- endunless -%}
                   </h2>
-                {%- when 'material' -%}
-                  <h3 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                      {{ product.material | escape }}
-                  </h3>
                 {%- when 'price' -%}
                   <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                     {%- render 'price',
@@ -176,9 +172,6 @@
                       | item_count_for_variant: product.selected_or_first_available_variant.id
                     -%}
                     {% # theme-check-enable %}
-                     <h3 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                      {{ product.material | escape }}
-                    </h3>
                     <span class="visually-hidden" id="quantity-label-{{ section.id }}">
                       {%- if cart_qty > 0 -%}
                         {{- 'products.product.quantity.in_cart_aria_label' | t: quantity: cart_qty -}}
