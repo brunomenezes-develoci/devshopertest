@@ -110,6 +110,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -180,7 +181,6 @@
         "buy_buttons_cEG66r",
         "share_pXHcqU"
       ],
-      "disabled": true,
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "{{ product.metafields.custom.similar.value }}",
