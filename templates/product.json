@@ -23,19 +23,6 @@
           "type": "title",
           "settings": {}
         },
-        "material": {
-          "type": "metafield_material",
-          "name": "Material",
-          "limit": 1,
-          "settings": [
-            {
-              "type": "text",
-              "id": "material_label",
-              "label": "Rótulo do Material",
-              "default": "Material:"
-            }
-          ]
-        },
         "price": {
           "type": "price",
           "settings": {}
