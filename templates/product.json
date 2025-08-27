@@ -55,10 +55,17 @@
             "share_label": "Share"
           }
         },
+        "text_9W4fGK": {
+          "type": "text",
+          "settings": {
+            "text": "Material de Fabricação",
+            "text_style": "subtitle"
+          }
+        },
         "text_AGnz4h": {
           "type": "text",
           "settings": {
-            "text": "Material:{{ product.metafields.custom.material_de_fabricacao.value }}",
+            "text": "{{ product.metafields.custom.material_de_fabricacao.value }}",
             "text_style": "body"
           }
         }
@@ -72,6 +79,7 @@
         "buy_buttons",
         "description",
         "share",
+        "text_9W4fGK",
         "text_AGnz4h"
       ],
       "settings": {
