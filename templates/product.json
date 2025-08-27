@@ -23,7 +23,7 @@
           "type": "title",
           "settings": {}
         },
-        {
+        "material": {
           "type": "metafield_material",
           "name": "Material",
           "limit": 1,
