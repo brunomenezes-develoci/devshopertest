@@ -77,6 +77,19 @@
             "text": "Teste{{ product.metafields.custom.material_de_fabricacao.value }}",
             "text_style": "body"
           }
+        },
+        "complementary_DybBkd": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Combina bien con",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
         }
       },
       "block_order": [
@@ -90,7 +103,8 @@
         "share",
         "collapsible_tab_LqtrDe",
         "text_9W4fGK",
-        "text_AGnz4h"
+        "text_AGnz4h",
+        "complementary_DybBkd"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -125,10 +139,81 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "featured_product_gdjpfL": {
+      "type": "featured-product",
+      "blocks": {
+        "text_dDJfmy": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_zNgiQy": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_NATNJn": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_nAq79X": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_MVePWy": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_6ewJTe": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_Fy9f3r": {
+          "type": "share",
+          "settings": {
+            "share_label": "Compartir"
+          }
+        }
+      },
+      "block_order": [
+        "text_dDJfmy",
+        "title_zNgiQy",
+        "price_NATNJn",
+        "variant_picker_nAq79X",
+        "quantity_selector_MVePWy",
+        "buy_buttons_6ewJTe",
+        "share_Fy9f3r"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "{{ product.metafields.custom.similar.value }}",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "featured_product_gdjpfL"
   ]
 }
