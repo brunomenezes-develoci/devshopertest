@@ -58,7 +58,7 @@
         "collapsible_tab_LqtrDe": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Fila desplegable",
+            "heading": "Material de fabricação",
             "icon": "none",
             "content": "<p>{{ product.metafields.custom.material_de_fabricacao.value }}</p>",
             "page": ""
