@@ -171,6 +171,54 @@
         "padding_bottom": 52
       }
     },
+    "image_with_text_PCbf8n": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_b9iUpF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Produto similar",
+            "heading_size": "h1"
+          }
+        },
+        "text_8MyjQ3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Veja esse produto, é muito similar ao que você está olhando, pode te  interessar!</p>",
+            "text_style": "body"
+          }
+        },
+        "button_jLzkHX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Etiqueta de botón",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_b9iUpF",
+        "text_8MyjQ3",
+        "button_jLzkHX"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "{{ product.metafields.custom.imagesimilar.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_product_YLnmWQ": {
       "type": "featured-product",
       "blocks": {
@@ -275,6 +323,7 @@
     "main",
     "related-products",
     "rich_text_HiFPP3",
+    "image_with_text_PCbf8n",
     "featured_product_YLnmWQ",
     "featured_collection_TXgNFd"
   ]
