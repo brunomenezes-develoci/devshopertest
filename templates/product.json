@@ -222,11 +222,11 @@
     "featured_product_YLnmWQ": {
       "type": "featured-product",
       "blocks": {
-        "text_KBPwbG": {
+        "text_FpGNP4": {
           "type": "text",
           "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
+            "text": "Produto similar",
+            "text_style": "subtitle"
           }
         },
         "title_pd9gtN": {
@@ -267,7 +267,7 @@
         }
       },
       "block_order": [
-        "text_KBPwbG",
+        "text_FpGNP4",
         "title_pd9gtN",
         "price_kz3ihV",
         "variant_picker_Fhz4Ri",
