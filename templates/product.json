@@ -285,7 +285,7 @@
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "{{ product.metafields.custom.similar.value }}",
+        "product": "{{ product.metafields.custom.prodsimilar.value.produto.value }}",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "small",
