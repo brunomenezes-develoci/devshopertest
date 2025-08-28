@@ -191,8 +191,8 @@
         "button_jLzkHX": {
           "type": "button",
           "settings": {
-            "button_label": "Etiqueta de botón",
-            "button_link": "",
+            "button_label": "Ver produto",
+            "button_link": "{{ product.metafields.custom.prodsimilar.value.producturl.value }}",
             "button_style_secondary": false
           }
         }
@@ -204,7 +204,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "{{ product.metafields.custom.imagesimilar.value }}",
+        "image": "{{ product.metafields.custom.prodsimilar.value.image.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
