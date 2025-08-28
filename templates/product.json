@@ -202,6 +202,7 @@
         "text_8MyjQ3",
         "button_jLzkHX"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "{{ product.metafields.custom.prodsimilar.value.image.value }}",
