@@ -192,7 +192,7 @@
           "type": "button",
           "settings": {
             "button_label": "Etiqueta de botón",
-            "button_link": "{{ product.url }}",
+            "button_link": "",
             "button_style_secondary": false
           }
         }
@@ -285,7 +285,7 @@
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "{{ product.metafields.custom.parecido.value }}",
+        "product": "{{ product.metafields.custom.similar.value }}",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "small",
