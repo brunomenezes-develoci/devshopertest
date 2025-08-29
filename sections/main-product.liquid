@@ -96,8 +96,7 @@
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'text' -%}
-                {% if block.settings.page != "material" or 
-                  product.metafields.custom.material_de_fabricacao != blank %}  
+                {% if block.settings.page != "material" and product.metafields.custom.material_de_fabricacao != blank %}  
                   <p
                   class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                   {{ block.shopify_attributes }}
