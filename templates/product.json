@@ -60,15 +60,6 @@
           "settings": {
             "heading": "Material de fabricação",
             "icon": "none",
-            "content": "<p>TESTE</p>",
-            "page": ""
-          }
-        },
-        "collapsible_tab_zt3QNp": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Teste",
-            "icon": "none",
             "content": "<p>{{ product.metafields.custom.material_de_fabricacao.value }}</p>",
             "page": ""
           }
@@ -98,7 +89,6 @@
         "description",
         "share",
         "collapsible_tab_LqtrDe",
-        "collapsible_tab_zt3QNp",
         "text_9W4fGK",
         "text_AGnz4h"
       ],
@@ -240,13 +230,6 @@
             "text_style": "subtitle"
           }
         },
-        "text_wC6QJH": {
-          "type": "text",
-          "settings": {
-            "text": "Produto similar",
-            "text_style": "body"
-          }
-        },
         "title_pd9gtN": {
           "type": "title",
           "settings": {
@@ -286,7 +269,6 @@
       },
       "block_order": [
         "text_KBPwbG",
-        "text_wC6QJH",
         "title_pd9gtN",
         "price_kz3ihV",
         "variant_picker_Fhz4Ri",
