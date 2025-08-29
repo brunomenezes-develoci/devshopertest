@@ -394,6 +394,9 @@
       "min_error": "Este item apresenta um mínimo de {{ min }}",
       "max_error": "Este item apresenta um máximo de {{ max }}",
       "step_error": "Só é possível adicionar este item em incrementos de {{ step }}"
+    },
+    "custom-section": {
+      "text": "Olá, mundo!"
     }
   },
   "localization": {
@@ -546,6 +549,36 @@
       "send_on_label": "Enviar em (opcional)",
       "expanded": "Formulário de destinatário do cartão-presente expandido",
       "collapsed": "Formulário de destinatário do cartão-presente recolhido"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "order_summary": {
+        "unconfirmed_label": "Não confirmado"
+      },
+      "processing": {
+        "remote_shops_payments_processing": "Processando pagamentos",
+        "remote_checkout_count": "%{atual} de %{total}"
+      },
+      "thank_you": {
+        "confirmed_items_count": "%{confirmed_count} de %{total_count} itens foram confirmados",
+        "thank_you_confirmed_orders_with_email": "Em breve, você receberá e-mails de confirmação separados com os números do seu pedido.",
+        "thank_you_confirmed_orders_with_phone": "Em breve, você receberá mensagens de texto de confirmação separadas com os números do seu pedido.",
+        "thank_you_confirmed_orders_with_email_and_phone": "Em breve, você receberá e-mails de confirmação separados com os números do seu pedido.",
+        "track_your_order_link_text": "Acompanhe seu pedido",
+        "checkout_on_remote_shop_link_text": "Tela de checkout %{remoteShopName}",
+        "confirmed_orders_title": "Seus pedidos estão confirmados",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "Um item não está confirmado",
+          "other": "Alguns itens não são confirmados",
+          "many": "Alguns itens não são confirmados"
+        },
+        "thank_you_unconfirmed_items_description": {
+          "one": "Você não foi cobrado pelo item",
+          "other": "Você não foi cobrado pelos itens.",
+          "many": "Você não foi cobrado pelos itens."
+        }
+      }
     }
   }
 }
