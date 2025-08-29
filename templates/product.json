@@ -83,7 +83,7 @@
         "text_AGnz4h": {
           "type": "text",
           "settings": {
-            "text": "Teste{{ product.metafields.custom.material_de_fabricacao.value }}",
+            "text": "{{ product.metafields.custom.material_de_fabricacao.value }}",
             "text_style": "body"
           }
         }
