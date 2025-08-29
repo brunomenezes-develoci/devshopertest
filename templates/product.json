@@ -55,7 +55,16 @@
             "share_label": "Share"
           }
         },
-        "collapsible_tab_LqtrDe": {
+        "collapsible_tab_xqxr4R": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Teste",
+            "icon": "none",
+            "content": "<p>TESTE</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_jcJ8WE": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Material de fabricação",
@@ -88,7 +97,8 @@
         "buy_buttons",
         "description",
         "share",
-        "collapsible_tab_LqtrDe",
+        "collapsible_tab_xqxr4R",
+        "collapsible_tab_jcJ8WE",
         "text_9W4fGK",
         "text_AGnz4h"
       ],
