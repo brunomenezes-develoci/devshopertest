@@ -74,13 +74,13 @@
         <div class="grid__item product__media-wrapper">
           {%- unless placeholder -%}
             {% render 'product-media-gallery', product: product, variant_images: variant_images, limit: 1 %}
-          {%- else -%}
+          {%- elsif false -%}
             <div class="product__media-item">
-              <div
-                class="product-media-container global-media-settings gradient{% if section.settings.constrain_to_viewport %} constrain-height{% endif %}"
-                style="--ratio: 1.0; --preview-ratio: 1.0;"
+                <div
+              class="product-media-container global-media-settings gradient{% if section.settings.constrain_to_viewport %} constrain-height{% endif %}"
+              style="--ratio: 1.0; --preview-ratio: 1.0;"
               >
-                {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
               </div>
             </div>
           {%- endunless -%}
@@ -98,7 +98,7 @@
               {%- case block.type -%}
                 {%- when '@app' -%}
                   {% render block %}
-                {%- when 'text' -%}
+                {%- when 'text'-%}
                   <p
                     class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                     {{ block.shopify_attributes }}
@@ -109,19 +109,21 @@
                   <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                     {%- unless placeholder -%}
                       {{ product.title | escape }}
-                    {%- else -%}
+                    {%- elsif false -%}
                       {{ 'onboarding.product_title' | t }}
                     {%- endunless -%}
                   </h2>
                 {%- when 'price' -%}
                   <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                    {%- render 'price',
+                    {% unless placeholder %}
+                      {%- render 'price',
                       product: product,
                       placeholder: placeholder,
                       use_variant: true,
                       show_badges: true,
                       price_class: 'price--large'
-                    -%}
+                      -%}
+                    {% endunless %}
                   </div>
                   {%- if product.quantity_price_breaks_configured? -%}
                     <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
@@ -389,10 +391,12 @@
                     {%- endif -%}
                   </div>
                 {%- when 'share' -%}
-                  {% liquid
-                    assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin
-                    render 'share-button', block: block, share_link: share_url
-                  %}
+                    {% liquid
+                    unless placeholder
+                      assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin
+                      render 'share-button', block: block, share_link: share_url
+                    endunless
+                    %}
                 {%- when 'variant_picker' -%}
                   {% render 'product-variant-picker',
                     product: product,
@@ -400,12 +404,12 @@
                     product_form_id: product_form_id
                   %}
                 {%- when 'buy_buttons' -%}
-                  {%- render 'buy-buttons',
+                    {%- render 'buy-buttons',
                     block: block,
                     product: product,
                     product_form_id: product_form_id,
                     section_id: section.id
-                  -%}
+                    -%}
                 {%- when 'custom_liquid' -%}
                   {{ block.settings.custom_liquid }}
                 {%- when 'rating' -%}
@@ -450,17 +454,19 @@
                   {% render 'icon-with-text', block: block %}
               {%- endcase -%}
             {%- endfor -%}
-            <a
+            {% unless  placeholder %}  
+              <a
               {% if product == blank %}
                 role="link" aria-disabled="true"
-              {% else %}
+                {% else %}
                 href="{{ product.url }}"
               {% endif %}
               class="link product__view-details animate-arrow"
             >
               {{ 'products.product.view_full_details' | t }}
               {{- 'icon-arrow.svg' | inline_asset_content -}}
-            </a>
+              </a>
+            {% endunless %}
           </section>
         </div>
       </div>
