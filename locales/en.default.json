@@ -565,6 +565,9 @@
         "unshippable_product": {
           "header": {
             "many": "No delivery available for %{count} items"
+          },
+          "message": {
+            "many": "These items will be removed from your cart because there are no delivery methods available for your address."
           }
         },
         "item_label": {
@@ -671,6 +674,21 @@
           },
           "prepaid_order_one_cycle_delivery_not_included": {
             "many": "%{shipping_price} for %{count} deliveries (%{per_delivery_cost})"
+          },
+          "first_n_order_free_with_cycle": {
+            "many": "Free shipping for %{count} deliveries plus %{recurring_order_shipping_price} after that"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "many": "Free shipping for %{count} deliveries and then for %{recurring_order_shipping_price}"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "many": "Free shipping for the first %{cycle} and then for %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle": {
+            "many": "%{shipping_price} for %{count} deliveries plus (%{per_delivery_cost}) and then by %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "many": "%{shipping_price} for %{count} deliveries (%{per_delivery_cost}) and then by %{recurring_order_shipping_price}"
           }
         },
         "shipping_method_first_shipment_group_title": {
@@ -689,6 +707,9 @@
         },
         "order_edit_banner_items_added": {
           "many": "%{count} added."
+        },
+        "card_fields_unavailable_html": {
+          "many": "Debit and credit card payments are not available at this time.<br> <a href=\"%{current_url}\">Please refresh this page</a> or try using a different payment method."
         }
       },
       "thank_you": {
@@ -715,6 +736,9 @@
         },
         "thank_you_unconfirmed_items_description": {
           "many": "You were not charged for the items."
+        },
+        "gift_card_resend_failure": {
+          "many": "An error occurred while resending your gift cards. Please try again or contact us."
         }
       },
       "order_payment_collection": {
@@ -761,6 +785,9 @@
         },
         "all_products_in_cart_unavailable": {
           "many": "These products are not available in your country or region."
+        },
+        "products_not_available": {
+          "many": "These products will be removed from your cart because they are not available in your country or region."
         }
       },
       "throttle": {
@@ -772,6 +799,9 @@
         "not_deliverable": {
           "title": {
             "many": "No delivery available for %{count} items"
+          },
+          "message": {
+            "many": "These items will be removed from your cart because there are no delivery methods available for your address."
           }
         }
       },
@@ -813,6 +843,26 @@
       "merchandise_unavailable_in_buyer_location": {
         "remove_items_action": {
           "many": "removes unavailable items"
+        }
+      },
+      "shipping_errors": {
+        "shipping_method_not_available_generic": {
+          "many": "Some items in your cart can't be shipped to the address you entered. Please check your address to make sure it's correct and try again, or select a different one."
+        },
+        "shipping_method_not_available_updated": {
+          "many": "One or more items you added can't be shipped to your location. Please remove them to complete checkout, or contact the store."
+        }
+      },
+      "processing": {
+        "wait": {
+          "medium": {
+            "many": "Your order is being processed. The estimated wait time is %{count} minutes."
+          }
+        }
+      },
+      "review_address_modal": {
+        "subtitle": {
+          "many": "This order will be shipped to an address provided by {{merchant}} . Please select a shipping address."
         }
       }
     },
@@ -863,6 +913,9 @@
         },
         "gift_card_resend_button": {
           "many": "Resend gift cards"
+        },
+        "gift_resend_failure": {
+          "many": "There was a problem resending your gift cards. Please try again or contact us."
         }
       }
     },
