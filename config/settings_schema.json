@@ -16,6 +16,12 @@
         "label": "t:settings_schema.logo.settings.logo_image.label"
       },
       {
+        "type": "checkbox",
+        "id": "logo_format",
+        "label": "Logo redonda (círculo)",
+        "default": false
+      },
+      {
         "type": "range",
         "id": "logo_width",
         "min": 50,
