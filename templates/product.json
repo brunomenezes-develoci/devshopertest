@@ -61,7 +61,7 @@
             "heading": "Teste",
             "icon": "none",
             "content": "<p>TESTE</p>",
-            "page": "text"
+            "page": ""
           }
         },
         "collapsible_tab_jcJ8WE": {
@@ -70,7 +70,7 @@
             "heading": "Material de fabricação",
             "icon": "none",
             "content": "<p>{{ product.metafields.custom.material_de_fabricacao.value }}</p>",
-            "page": "material"
+            "page": ""
           }
         },
         "text_9W4fGK": {
@@ -83,7 +83,7 @@
         "text_AGnz4h": {
           "type": "text",
           "settings": {
-            "text": "Teste{{ product.metafields.custom.material_de_fabricacao.value }}",
+            "text": "{{ product.metafields.custom.material_de_fabricacao.value }}",
             "text_style": "body"
           }
         }
@@ -103,7 +103,7 @@
         "text_AGnz4h"
       ],
       "settings": {
-        "enable_sticky_info": true,
+        "enable_sticky_info": false,
         "color_scheme": "scheme-1",
         "media_size": "large",
         "constrain_to_viewport": true,
