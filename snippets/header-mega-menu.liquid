@@ -44,7 +44,7 @@
                           aria-current="page"
                         {% endif %}
                       >
-                        {{ childlink.title | escape }}
+                        {{ childlink.title  | escape }}
                       </a>
                       {%- if childlink.links != blank -%}
                         <ul class="list-unstyled" role="list">
@@ -79,13 +79,16 @@
               aria-current="page"
             {% endif %}
           >
-            <span
-              {%- if link.current %}
-                class="header__active-menu-item"
-              {% endif %}
-            >
-              {{- link.title | escape -}}
-            </span>
+          <span
+          {%- if link.current %}
+            class="header__active-menu-item"
+          {% endif %}
+          >
+            {% if  link.handle == "home" %}  
+              <i class="bi bi-house" aria-hidden="true"></i>
+            {% endif %}
+            {{- link.title| escape -}}
+          </span>
           </a>
         {%- endif -%}
       </li>
