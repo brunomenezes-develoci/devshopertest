@@ -2450,26 +2450,17 @@ input[type='checkbox'] {
   color: rgba(var(--color-foreground), 0.75);
 }
 
-/* Wrapper controla o formato e o corte */
-.logo-shape {
-  display: inline-block;
-  /* use a largura já controlada pelo tema; se não houver, defina uma */
-  /* width: 64px;  <-- opcional */
-  aspect-ratio: 1 / 1;   /* força quadrado */
-  border-radius: 0;      /* padrão: quadrado */
-  overflow: hidden;      /* necessário para cortar em círculo */
-}
-
-/* Quando a setting estiver ON, vira círculo */
-.logo-shape.logo-shape--round {
+/* Recorte circular no wrapper */
+.header__heading-logo-wrapper.logo--round {
   border-radius: 50%;
+  overflow: hidden;
 }
 
-/* A imagem preenche o recorte */
-.logo-shape .header__heading-logo {
+/* A imagem preenche o círculo */
+.header__heading-logo-wrapper.logo--round .header__heading-logo {
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* corta sobras para preencher */
+  object-fit: cover;
   display: block;
 }
 
