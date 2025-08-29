@@ -1,3 +1,12 @@
+{%- liquid
+  if section.settings.collection != null
+    assign placeholder = true
+  else 
+    assign placeholder = false
+  endif
+-%}
+
+
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 
@@ -73,7 +82,7 @@
     data-id="{{ section.id }}"
   >
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
-      {%- if section.settings.title != blank -%}
+      {%- if section.settings.title != blank and placeholder -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
         </h2>
@@ -133,7 +142,7 @@
               {%- assign skip_card_product_styles = true -%}
             {%- endfor -%}
           {% endpaginate %}
-        {%- else -%}
+        {%- elsif placeholder -%}
           {%- for i in (1..section.settings.columns_desktop) -%}
             <li
               class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"

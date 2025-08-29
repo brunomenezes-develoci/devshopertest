@@ -51,6 +51,18 @@ class HeaderMenu extends DetailsDisclosure {
     // Adicionamos os eventos de mouse no container principal
     this.addEventListener('mouseenter', this.onMouseEnter.bind(this));
     this.content.addEventListener('mouseleave', this.onMouseLeave.bind(this));
+
+    this.summary.addEventListener('mouseleave', () => {
+      const menuRect = this.content.getBoundingClientRect(); // pega o retângulo do menu
+      const y = event.clientY; // posição X do mouse ao sair
+      // só fecha se o mouse estiver à esquerda ou à direita do menu
+      if (y < menuRect.top || y > menuRect.bottom) {
+        this.timeout = setTimeout(() => {
+          this.close();
+        }, 150);
+      }
+    });
+
   }
 
   // Ação ao entrar com o mouse: Abre o menu imediatamente e limpa o temporizador
@@ -85,5 +97,6 @@ class HeaderMenu extends DetailsDisclosure {
     );
   }
 }
+
 
 customElements.define('header-menu', HeaderMenu);
