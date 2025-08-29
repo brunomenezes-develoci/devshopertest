@@ -96,12 +96,15 @@
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'text' -%}
-                <p
+                {% if block.settings.page != "material" or 
+                  product.metafields.custom.material_de_fabricacao != blank %}  
+                  <p
                   class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                   {{ block.shopify_attributes }}
-                >
+                  >
                   {{- block.settings.text -}}
-                </p>
+                  </p>
+                {% endif %}
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h1>{{ product.title | escape }}</h1>
@@ -216,7 +219,7 @@
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
-                {% if product.metafields.custom.material != blank %}  
+                {% if block.settings.page != "material" or product.metafields.custom.material_de_fabricacao != blank %}  
                   <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                     <details id="Details-{{ block.id }}-{{ section.id }}">
                       <summary>

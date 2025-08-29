@@ -61,7 +61,7 @@
             "heading": "Teste",
             "icon": "none",
             "content": "<p>TESTE</p>",
-            "page": ""
+            "page": "text"
           }
         },
         "collapsible_tab_jcJ8WE": {
@@ -70,7 +70,7 @@
             "heading": "Material de fabricação",
             "icon": "none",
             "content": "<p>{{ product.metafields.custom.material_de_fabricacao.value }}</p>",
-            "page": ""
+            "page": "material"
           }
         },
         "text_9W4fGK": {
