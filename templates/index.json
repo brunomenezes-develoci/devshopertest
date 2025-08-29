@@ -38,8 +38,8 @@
       "settings": {
         "image": "shopify://shop_images/theme_cover_image.jpg",
         "image_overlay_opacity": 40,
-        "image_height": "medium",
-        "image_behavior": "zoom-in",
+        "image_height": "small",
+        "image_behavior": "fixed",
         "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
